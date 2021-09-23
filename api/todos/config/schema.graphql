@@ -1,0 +1,12 @@
+module.exports = {
+  resolver: {
+    Query: {
+      todos: {
+        description: 'Return a list of todos',
+        policies: [
+          'global::is-authenticated',
+        ],
+      },
+    }
+  },
+};
